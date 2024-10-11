@@ -7,8 +7,6 @@ import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] })
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,7 +18,7 @@ export default function RootLayout({
         <title>Charton dev build</title>
         <Script src="https://telegram.org/js/telegram-web-app.js" strategy="beforeInteractive" />
       </head>
-      <body className={inter.className}>
+      <body>
         <Header>
           {children}
         </Header>
