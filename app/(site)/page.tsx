@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react";
+import WebApp from "@twa-dev/sdk";
 
 //
 
@@ -21,6 +22,9 @@ export default function Home() {
   useEffect(() => {
 
     if (window.Telegram?.WebApp) {
+
+      WebApp.ready()
+      WebApp.expand()
 
       const initDataString = window.Telegram.WebApp.initData;
       if (initDataString) {
