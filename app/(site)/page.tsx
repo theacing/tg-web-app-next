@@ -23,8 +23,8 @@ export default function Home() {
 
     if (window.Telegram?.WebApp) {
 
-      WebApp.ready()
-      WebApp.expand()
+      WebApp.ready();
+      WebApp.expand();
 
       const initDataString = window.Telegram.WebApp.initData;
       if (initDataString) {
